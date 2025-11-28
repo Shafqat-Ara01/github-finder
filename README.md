@@ -42,7 +42,7 @@ Works on:
 Your last selected theme (dark/light) is saved automatically using localStorage.
 
 ## What I Learned
--Using Fetch API with async/await
+- Using Fetch API with async/await
 - Error handling for real APIs
 - DOM manipulation to generate UI dynamically
 - Responsive layouts
@@ -51,7 +51,6 @@ Your last selected theme (dark/light) is saved automatically using localStorage.
 - Designing minimal UI with shadows & animations
 ## Author
 Shafqat Ara
-Frontend Developer • Clean UI • Practical Features
 
 ## License
 This project is open-source and free to use.
