@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #040918 0%, #091540 100%);
+  font-family: "Noto Sans", sans-serif;
+}
+
+body.light {
+  background: linear-gradient(180deg, #ffffff 0%, #eaeaea 100%);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: hsl(225, 23%, 24%);
+  border-bottom: 1px solid transparent;
+}
+body.light .header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+.header h1 {
+  color: hsl(200, 60%, 99%);
+}
+body.light .header h1 {
+  color: #222;
+}
+.header button {
+  padding: 10px;
+  background-color: hsl(226, 11%, 37%);
+  border: none;
+  color: hsl(227, 75%, 14%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+body.light .header button {
+  background-color: #f0f0f0;
+  color: #222;
+}
+.header button:hover {
+  background-color: hsl(227, 75%, 14%);
+  color: orange;
+}
+body.light .header button:hover {
+  background-color: orange;
+  color: #fff;
+}
+.header button:focus {
+  outline: 2px solid orange;
+}
+
+.intro {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.intro h1 {
+  color: hsl(0, 0%, 93%);
+}
+body.light .intro h1 {
+  color: #222;
+}
+.highlight {
+  color: orange;
+}
+
+.intro p,
+.bio p,
+.info p {
+  color: hsl(0, 0%, 93%);
+  max-width: 480px;
+}
+body.light .intro p,
+body.light .bio p,
+body.light .info p {
+  color: #444;
+}
+.intro p:after {
+  content: "";
+  height: 2px;
+  width: 120px;
+  display: block;
+  background: linear-gradient(90deg, transparent, #ff8c00, transparent);
+  margin: 15px auto 0;
+  box-shadow: 0 0 10px #ff8c00;
+}
+.gitHubFinder {
+  max-width: 600px;
+  width: 100%;
+  background-color: hsl(226, 25%, 17%);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+body.light .gitHubFinder {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.gitHubFinder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, orange, transparent);
+  filter: blur(1px);
+}
+
+.gitHubFinder h2 {
+  color: hsl(0, 0%, 93%);
+}
+body.light .gitHubFinder h2 {
+  color: #222;
+}
+.search-form {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+body.light .search-form input {
+  background: #fff;
+  color: #222;
+  border: 1px solid #ccc;
+}
+.search-form input {
+  padding: 12px;
+  width: 70%;
+  border-radius: 12px;
+  border: none;
+  background: #fff;
+  color: #333;
+}
+
+.search-form input:focus {
+  outline: 2px solid orange;
+  outline-offset: 2px;
+}
+
+.search-form button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: orange;
+  color: hsl(227, 75%, 14%);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+body.light .search-form button {
+  background-color: orange;
+  color: white;
+}
+.search-form button:hover {
+  background-color: #ff8c00;
+}
+
+.search-form button:focus {
+  outline: 2px solid orange;
+  outline-offset: 2px;
+}
+
+.loading {
+  margin: 15px auto;
+  height: 40px;
+  width: 40px;
+  border: 4px solid #ccc;
+  border-top-color: orange;
+  background-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.75s linear infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.profile-card {
+  margin: 20px auto;
+  background-color: hsl(225, 23%, 24%);
+  width: 90%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+body.light .profile-card {
+  background-color: #ffffff;
+}
+.padding {
+  padding: 20px;
+}
+.user-intro {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.github-info {
+  margin-top: 20px;
+  width: 95%;
+  background-color: hsl(225, 23%, 24%);
+  padding: 12px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: hsl(0, 0%, 93%);
+  font-size: 15px;
+}
+body.light .github-info {
+  background-color: #f5f5f5;
+  color: #222;
+}
+.github-info span.divider {
+  color: hsl(0, 0%, 93%);
+  opacity: 0.5;
+}
+
+body.light .github-info span.divider {
+  color: #888;
+}
+.github-info strong {
+  color: orange;
+  font-weight: 700;
+}
+body.light .github-info strong {
+  color: orange;
+}
+.info-item {
+  color: hsl(0, 0%, 93%);
+  flex: 1;
+  text-align: center;
+}
+body.light .info-item {
+  color: #333;
+}
+.visitGithub {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 2px solid orange;
+  border-radius: 8px;
+  color: hsl(0, 0%, 93%);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.visitGithub:hover {
+  color: #222;
+}
+
+.visitGithub::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  background: orange;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 0.7s ease;
+}
+
+.visitGithub:hover::before {
+  width: 100%;
+}
+.visitGithub:focus {
+  outline: 2px solid orange;
+}
+
+body.light .visitGithub {
+  color: #222;
+  border-color: orange;
+}
+
+body.light .visitGithub:hover {
+  color: white;
+}
+
+body.light .visitGithub::before {
+  background: orange;
+}
+
+@media (max-width: 650px) {
+  .header h1,
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+  .intro p {
+    font-size: 1rem;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+  }
+  .gitHubFinder {
+    max-width: 95%;
+  }
+  .gitHubFinder h2 {
+    font-size: 1.3rem;
+  }
+  .profile-card {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gitHubFinder {
+    max-width: 98%;
+  }
+
+  .github-info {
+    padding: 12px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .header h1,
+  .intro h1 {
+    font-size: 1.3rem;
+  }
+  .intro p {
+    font-size: 0.9rem;
+  }
+  .gitHubFinder h2 {
+    font-size: 1rem;
+  }
+  .joined-date {
+    font-size: 0.8rem;
+  }
+}

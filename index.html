@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHubFinder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>GitHubFinder</h1>
+      <button class="mode-btn"><i class="fa-solid fa-moon icon"></i></button>
+    </header>
+    <section class="intro">
+      <h1>Search <span class="highlight">GitHub Users</span> Instantly</h1>
+      <p>Find any user's GitHub profile by just typing their username.</p>
+    </section>
+
+    <main class="gitHubFinder">
+      <h2><i class="fa-solid fa-magnifying-glass"></i> Search here</h2>
+      <form id="searchForm" class="search-form">
+        <input
+          type="text"
+          placeholder="Search by gitHub username..."
+          id="searchInput"
+        />
+        <button id="searchBtn">Search</button>
+      </form>
+      
+<div class="loading hidden"></div>
+      <div id="profile" class="profile-card">
+          
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
