@@ -1,4 +1,4 @@
-##GitHub Finder
+## GitHub Finder
 A clean and minimal GitHub Profile Finder where you can search any GitHub username and instantly view their public profile, stats, and bio.
 Built with HTML, CSS, and JavaScript, using the GitHub Users API.
 
@@ -13,9 +13,6 @@ Built with HTML, CSS, and JavaScript, using the GitHub Users API.
 ✔️ Clean UI inspired by DevFinder
 ✔️ Subtle shadows & hover effects
 ✔️ Minimal, modern layout
-
-## Preview
-(Add your project screenshot or GIF here)
 
 ## Tech Stack
 - HTML5
