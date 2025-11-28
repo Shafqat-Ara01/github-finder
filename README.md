@@ -3,22 +3,22 @@ A clean and minimal GitHub Profile Finder where you can search any GitHub userna
 Built with HTML, CSS, and JavaScript, using the GitHub Users API.
 
 ## Features
-✔️ Search any GitHub username
-✔️ Dynamic profile card (avatar, bio, join date, followers, repos, following)
-✔️ Shows “Not Found” UI for invalid usernames
-✔️ Dark/Light theme toggle with localStorage
-✔️ Fully responsive design
-✔️ Smooth fade-in animations
-✔️ Loading spinner while fetching data
-✔️ Clean UI inspired by DevFinder
-✔️ Subtle shadows & hover effects
-✔️ Minimal, modern layout
+- ✔️ Search any GitHub username
+- ✔️ Dynamic profile card (avatar, bio, join date, followers, repos, following)
+- ✔️ Shows “Not Found” UI for invalid usernames
+- ✔️ Dark/Light theme toggle with localStorage
+- ✔️ Fully responsive design
+- ✔️ Smooth fade-in animations
+- ✔️ Loading spinner while fetching data
+- ✔️ Clean UI inspired by DevFinder
+- ✔️ Subtle shadows & hover effects
+- ✔️ Minimal, modern layout
 
 ## Tech Stack
 - HTML5
 - CSS3
--JavaScript (Fetch API)
--Font Awesome Icons
+- JavaScript (Fetch API)
+- Font Awesome Icons
 
 ## GitHub API Used
 Fetching data from:
